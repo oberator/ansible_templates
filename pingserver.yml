@@ -1,0 +1,3 @@
+---
+- name: Ping all nodes
+  ansible.buildin.ping:
