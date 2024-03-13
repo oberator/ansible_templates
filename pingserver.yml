@@ -1,4 +1,5 @@
 ---
-tasks:
-- name: Ping all nodes
-  ansible.buildin.ping:
+- hosts: all
+  tasks:
+    - name: Ping all nodes
+      ansible.buildin.ping:
