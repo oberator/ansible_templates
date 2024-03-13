@@ -1,5 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: Ping all nodes
-      ansible.buildin.ping:
+    - name: update apt packages
+      apt:
+        upgrade: yes
+        update_cache: yes
